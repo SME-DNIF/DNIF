@@ -17,3 +17,9 @@ dfs_admin.sh - This dfs_admin script will create a data balancing report between
 fsck_rep.sh - This script is responsible for generating Filesystem check report.
 
 restoration.sh - This script is designed to restore all backups from a specific date across all streams within a particular scope.
+
+stop.sh - This script is written to stop the application components before any server activity was to be carried out. 
+
+start.sh - This script is written to start the application post any server activity. 
+
+dfssize.sh - This script is written to get the size of data that is ingested in hdfs. 
