@@ -23,3 +23,5 @@ stop.sh - This script is written to stop the application components before any s
 start.sh - This script is written to start the application post any server activity. 
 
 dfssize.sh - This script is written to get the size of data that is ingested in hdfs. 
+
+setup_sanity.sh - This is used to collect the complete sanity report for all DNIF component.This will also include the logs.  
