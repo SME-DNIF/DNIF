@@ -15,7 +15,7 @@ else
 		        timeis=$(date +%H%M%S)
 		        uname=$(cat /DNIF/DL/csltuconfig/username)
 		        export HADOOP_USER_NAME=$uname
-		        cd /opt/hadoop-3.2.1/bin/
+		        cd /opt/hadoop-3.2.3/bin/
         		./hdfs fsck / >> /var/tmp/fsck_$dateis"T"$timeis.out
 			echo -e "\nfsck report generated successfully!!!\n"
 			echo -e "path: /var/tmp/fsck_$dateis"T"$timeis.out\n"
@@ -31,7 +31,7 @@ else
 	 	       	timeis=$(date +%H%M%S)
 	 	       	uname=$(cat /DNIF/DL/csltuconfig/username)
 	 	       	export HADOOP_USER_NAME=$uname
-	 	       	cd /opt/hadoop-3.2.1/bin/
+	 	       	cd /opt/hadoop-3.2.3/bin/
  		       	./hdfs fsck / >> /var/tmp/fsck_$dateis"T"$timeis.out
 			echo -e "\nfsck report generated successfully!!!\n"
                         echo -e "path: /var/tmp/fsck_$dateis"T"$timeis.out\n"
