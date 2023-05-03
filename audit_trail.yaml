@@ -1,0 +1,7 @@
+console_address: 172.16.85.31
+cluster_id: 778fc8ff-8901-479e-a1b7-572a644a7794
+# Time in IST format YYYY-MM-DDTHH:mm:ss 'T' must be remain in between date and time
+start_time: 2023-05-01T00:00:00
+end_time: 2023-05-02T23:59:59
+ssid: d32cfd72-d9ea-4f0f-b916-82f33bfc9fc2
+page_size: 1000
