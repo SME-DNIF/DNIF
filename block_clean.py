@@ -6,10 +6,10 @@ import sys
 from datetime import datetime
 
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-directory = "/tmp"
-days_ago = 1
+directory = "dnif/tmp"
+days_ago = 3
 current_time = time.time()
-days_in_seconds = 1 * 24 * 60 * 60
+days_in_seconds = 3 * 24 * 60 * 60
 log_file = "/dnif/log/file_clean.log"
 
 log_directory = os.path.dirname(log_file)
