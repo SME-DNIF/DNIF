@@ -24,7 +24,7 @@ function hadoop_tmp_clear() {
         tmp_count_new=$(./hadoop fs -ls /tmp/hive/$uname  | wc -l)
         echo -e "$dateis $timeis updated count of tmp files in hadoop is $tmp_count_new" >> $cwd/hadoop_tmp_clear.log
     else
-        echo -e "$dateis $timeis count of tmp files in hadoop is $tmp_count"
+        echo -e "$dateis $timeis count of tmp files in hadoop is $tmp_count" >> $cwd/hadoop_tmp_clear.log
     fi
 } 
 
