@@ -19,7 +19,7 @@ function hadoop_tmp_clear() {
     tmp_count=$(./hadoop fs -ls /tmp/hive/$uname  | wc -l)
     if [[ $tmp_count -gt 700000 ]]; then        
         echo -e "$dateis $timeis count of tmp files in hadoop is $tmp_count" >> $cwd/hadoop_tmp_clear.log
-        timeout 180s ./hadoop fs -rm -r /tmp/hive/$uname/* 
+        timeout 240s ./hadoop fs -rm -r /tmp/hive/$uname/* 
         echo -e "$dateis $timeis executed hadoop tmp clear command for 180s" >> $cwd/hadoop_tmp_clear.log
         tmp_count_new=$(./hadoop fs -ls /tmp/hive/$uname  | wc -l)
         echo -e "$dateis $timeis updated count of tmp files in hadoop is $tmp_count_new" >> $cwd/hadoop_tmp_clear.log
