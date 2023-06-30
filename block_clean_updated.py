@@ -5,8 +5,8 @@ import sys
 from datetime import datetime, timedelta
 
 timestamp = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-directory = "/tmp"
-days_ago = 12
+directory = "dnif/tmp"
+days_ago = 5
 current_time = time.time()
 days_in_seconds = (days_ago) * 24 * 60 * 60
 log_file = "/dnif/log/file_clean.log"
