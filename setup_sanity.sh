@@ -235,7 +235,11 @@ else
     echo -e "***** IP OF THE SERVER ***** \n" >> $cwd/Setup_Report_$dateis.log
 
     ifconfig >> $cwd/Setup_Report_$dateis.log
-
+    
+    echo -e "***** IP ADDR OF THE SERVER ***** \n" >> $cwd/Setup_Report_$dateis.log
+	
+    ip addr show  >> $cwd/Setup_Report_$dateis.log
+    
     echo -e "***** HOSTNAME ***** \n" >> $cwd/Setup_Report_$dateis.log
 
     hostname >> $cwd/Setup_Report_$dateis.log
